@@ -1,10 +1,10 @@
 html
-    height: 100vh
+    height: 100%
 body
-    height: 100vh
+    height: 100%
 
 .wrapper
-    height: 100vh
+    height: 100%
     
     display: flex
     justify-content: space-between
@@ -13,7 +13,7 @@ body
         width: 100%
         max-width: 300px
         background: $primary
-        height: 100vh
+        height: 100%
         position: sticky
         top: 0px
         .user
@@ -83,11 +83,6 @@ body
         flex-grow: 1
         display: flex
         flex-direction: column
-        height: 100vh
-        overflow: hidden
-        position: relative
-        backface-visibility: hidden
-        will-change: overflow
         .navbar
             height: 80px
             padding: 0px 15px
@@ -95,30 +90,23 @@ body
                 width: 20%
                 justify-content: space-between
         .page-content
-            
+            flex-grow: 1
             display: flex
             justify-content: flex-start
             align-items: top
             background: $light
-            height: auto
-            overflow: auto
-            -webkit-overflow-scrolling: touch
-            -ms-overflow-style: none    
-            &::-webkit-scrollbar 
-                display: none
-
+            
             .page
-                
-               
-                
+                flex-grow: 1
+                border-right: 1px solid darken($light,20 )
+                display: flex
+                flex-direction: column
+                justify-content: flex-start
+                align-items: top
                 
                 .tabs
                     border-bottom-color:  darken($light,20 )
                     font-size: 0.85rem
-                    position: sticky
-                    top: 0px
-                    z-index: 2
-                    background: $light
                     li
                         a
                             padding: 1.5rem 2rem
@@ -147,19 +135,18 @@ body
                                 &::after
                                     margin: 0%
                 .container
-                    
+                    flex-grow: 1
                     padding: 15px 30px                    
                     position: relative              
-                               
+                    display: flex
+                    height: auto               
                     
                     .new_post
                         margin-bottom: 2rem
-                        box-shadow: none
                         label
                             color: darken($light,20 )
                     .tweet_feed
                         padding: 16px
-                        box-shadow: none
                         .card-header
                             box-shadow: none
                             padding: 0px
@@ -187,8 +174,5 @@ body
                                     font-size: 15px
                                     color: darken($light, 60)
             .sidebar
-                position: sticky
-                top: 0px
-                border-left: 1px solid darken($light,20 )
                 width: 100%
                 max-width: 300px
