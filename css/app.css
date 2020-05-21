@@ -7047,7 +7047,7 @@ body {
     will-change: overflow; }
     .wrapper .page-container .navbar {
       height: 80px;
-      padding: 0px 15px; }
+      padding: 0px 32px; }
       .wrapper .page-container .navbar .navbar-end {
         width: 20%;
         justify-content: space-between; }
@@ -7059,80 +7059,142 @@ body {
       height: auto;
       overflow: auto;
       -webkit-overflow-scrolling: touch;
-      -ms-overflow-style: none; }
+      -ms-overflow-style: none;
+      scrollbar-width: none; }
       .wrapper .page-container .page-content::-webkit-scrollbar {
         display: none; }
-      .wrapper .page-container .page-content .page .tabs {
-        border-bottom-color: #b9c0ce;
-        font-size: 0.85rem;
-        position: sticky;
-        top: 0px;
-        z-index: 2;
-        background: #f5f6f8; }
-        .wrapper .page-container .page-content .page .tabs li a {
-          padding: 1.5rem 2rem;
-          color: #9ba5b9;
-          border: none;
-          position: relative;
-          font-weight: 600; }
-          .wrapper .page-container .page-content .page .tabs li a::after {
-            content: "";
-            position: absolute;
-            bottom: 0px;
-            left: 0px;
-            right: 0px;
-            height: 2px;
-            background: #53a6e8;
-            margin: 0px 50% 0px 50%;
-            transition: all 0.25s ease-in-out; }
-          .wrapper .page-container .page-content .page .tabs li a:hover {
-            border-bottom: none; }
-            .wrapper .page-container .page-content .page .tabs li a:hover::after {
+      .wrapper .page-container .page-content .page {
+        flex-grow: 3; }
+        .wrapper .page-container .page-content .page .tabs {
+          border-bottom-color: #b9c0ce;
+          height: 74px;
+          position: sticky;
+          top: 0px;
+          z-index: 2;
+          background: #f5f6f8; }
+          .wrapper .page-container .page-content .page .tabs li a {
+            line-height: 74px;
+            color: #9ba5b9;
+            font-weight: 600;
+            font-size: 0.85rem;
+            border: none;
+            position: relative;
+            text-transform: uppercase; }
+            .wrapper .page-container .page-content .page .tabs li a::after {
+              content: "";
+              position: absolute;
+              bottom: 0px;
+              left: 0px;
+              right: 0px;
+              height: 2px;
+              background: #53a6e8;
+              margin: 0px 50% 0px 50%;
+              transition: all 0.25s ease-in-out; }
+            .wrapper .page-container .page-content .page .tabs li a:hover {
+              border-bottom: none; }
+              .wrapper .page-container .page-content .page .tabs li a:hover::after {
+                margin: 0%; }
+          .wrapper .page-container .page-content .page .tabs li.is-active a {
+            border-bottom: none;
+            color: #62708c; }
+            .wrapper .page-container .page-content .page .tabs li.is-active a::after {
               margin: 0%; }
-        .wrapper .page-container .page-content .page .tabs li.is-active a {
-          border-bottom: none;
-          color: #62708c; }
-          .wrapper .page-container .page-content .page .tabs li.is-active a::after {
-            margin: 0%; }
-      .wrapper .page-container .page-content .page .container {
-        padding: 15px 30px;
-        position: relative; }
-        .wrapper .page-container .page-content .page .container .new_post {
-          margin-bottom: 2rem;
-          box-shadow: none; }
-          .wrapper .page-container .page-content .page .container .new_post label {
-            color: #b9c0ce; }
-        .wrapper .page-container .page-content .page .container .tweet_feed {
-          padding: 16px;
-          box-shadow: none; }
-          .wrapper .page-container .page-content .page .container .tweet_feed .card-header {
-            box-shadow: none;
-            padding: 0px; }
-            .wrapper .page-container .page-content .page .container .tweet_feed .card-header .card-header-title {
-              padding-bottom: 15px;
-              font-size: 16px;
-              border-bottom: 1px solid #d7dbe3; }
-          .wrapper .page-container .page-content .page .container .tweet_feed .card-content {
-            padding: 0px;
-            padding-top: 16px; }
-          .wrapper .page-container .page-content .page .container .tweet_feed .tweet_list .tweet {
-            display: flex;
-            margin-bottom: 16px; }
-            .wrapper .page-container .page-content .page .container .tweet_feed .tweet_list .tweet .image {
-              min-width: 80px;
-              max-width: 80px;
-              margin-right: 16px; }
-            .wrapper .page-container .page-content .page .container .tweet_feed .tweet_list .tweet .title {
-              font-size: 1rem;
-              margin-bottom: 5px; }
-            .wrapper .page-container .page-content .page .container .tweet_feed .tweet_list .tweet .content {
-              font-size: 15px;
-              color: #4d586e; }
+        .wrapper .page-container .page-content .page .container {
+          padding: 15px 30px;
+          position: relative; }
+          .wrapper .page-container .page-content .page .container .new_post {
+            margin-bottom: 2rem;
+            box-shadow: none; }
+            .wrapper .page-container .page-content .page .container .new_post label {
+              color: #b9c0ce; }
+          .wrapper .page-container .page-content .page .container .tweet_feed {
+            padding: 16px;
+            box-shadow: none; }
+            .wrapper .page-container .page-content .page .container .tweet_feed .card-header {
+              box-shadow: none;
+              padding: 0px; }
+              .wrapper .page-container .page-content .page .container .tweet_feed .card-header .card-header-title {
+                padding-bottom: 15px;
+                font-size: 16px;
+                border-bottom: 1px solid #d7dbe3; }
+            .wrapper .page-container .page-content .page .container .tweet_feed .card-content {
+              padding: 0px;
+              padding-top: 16px; }
+            .wrapper .page-container .page-content .page .container .tweet_feed .tweet_list .tweet {
+              display: flex;
+              margin-bottom: 16px; }
+              .wrapper .page-container .page-content .page .container .tweet_feed .tweet_list .tweet .image {
+                min-width: 80px;
+                max-width: 80px;
+                margin-right: 16px; }
+              .wrapper .page-container .page-content .page .container .tweet_feed .tweet_list .tweet .title {
+                font-size: 1rem;
+                margin-bottom: 5px; }
+              .wrapper .page-container .page-content .page .container .tweet_feed .tweet_list .tweet .content {
+                font-size: 15px;
+                color: #4d586e; }
       .wrapper .page-container .page-content .sidebar {
+        flex-grow: 1;
         position: sticky;
         top: 0px;
         border-left: 1px solid #b9c0ce;
         width: 100%;
-        max-width: 300px; }
+        max-width: 300px;
+        overflow: auto;
+        padding: 0rem 32px;
+        scrollbar-width: none; }
+        .wrapper .page-container .page-content .sidebar::-webkit-scrollbar {
+          display: none; }
+        .wrapper .page-container .page-content .sidebar .card {
+          background: #f5f6f8;
+          border-bottom: 1px solid #b9c0ce;
+          box-shadow: none; }
+          .wrapper .page-container .page-content .sidebar .card .card-header-title {
+            padding: 0px;
+            height: 74px;
+            border-bottom: 1px solid #b9c0ce;
+            display: flex;
+            justify-content: space-between;
+            color: #9ba5b9;
+            font-weight: 600;
+            font-size: 0.85rem;
+            text-transform: uppercase; }
+          .wrapper .page-container .page-content .sidebar .card .card-content {
+            padding: 1.5rem 0px; }
+            .wrapper .page-container .page-content .sidebar .card .card-content .ulist li {
+              display: flex;
+              justify-content: flex-start;
+              align-items: flex-start;
+              margin-bottom: 1.5rem; }
+              .wrapper .page-container .page-content .sidebar .card .card-content .ulist li .image {
+                margin-right: 15px; }
+              .wrapper .page-container .page-content .sidebar .card .card-content .ulist li a {
+                color: #000;
+                font-weight: 600; }
+              .wrapper .page-container .page-content .sidebar .card .card-content .ulist li .info .uname {
+                color: #4d586e;
+                font-size: 0.9rem; }
+              .wrapper .page-container .page-content .sidebar .card .card-content .ulist li .info .details {
+                color: #aab3c4;
+                font-size: 0.75rem; }
+                .wrapper .page-container .page-content .sidebar .card .card-content .ulist li .info .details a {
+                  color: #53a6e8; }
+            .wrapper .page-container .page-content .sidebar .card .card-content .treng_list {
+              font-size: 1rem; }
+              .wrapper .page-container .page-content .sidebar .card .card-content .treng_list a {
+                color: #9ba5b9;
+                display: block;
+                padding: 10px 0px; }
+          .wrapper .page-container .page-content .sidebar .card .card-footer {
+            padding: 0px;
+            display: block;
+            font-size: 0.85rem;
+            border: none; }
+            .wrapper .page-container .page-content .sidebar .card .card-footer .card-footer-item {
+              padding: 0px;
+              display: inline-block;
+              margin-right: 15px;
+              border: none;
+              color: #53a6e8; }
 
 /*# sourceMappingURL=app.css.map */
