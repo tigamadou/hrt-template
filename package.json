@@ -1,0 +1,22 @@
+{
+  "name": "hrt-template",
+  "version": "1.0.0",
+  "description": "A simple Html template for Rails Hrt Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tigamadou/hrt-template.git"
+  },
+  "author": "Amadou Ibrahim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tigamadou/hrt-template/issues"
+  },
+  "homepage": "https://github.com/tigamadou/hrt-template#readme",
+  "dependencies": {
+    "bulma": "^0.8.2"
+  }
+}
