@@ -79,6 +79,10 @@ body
                     &:active
                         background: lighten($info,25 )
                         color: $primary
+                &.is-active
+                    a
+                        background: $info
+                        color: #fff
     .page-container
         flex-grow: 1
         display: flex
@@ -88,6 +92,7 @@ body
         position: relative
         backface-visibility: hidden
         will-change: overflow
+        background: $light
         .navbar
             height: 80px
             padding: 0px 32px
@@ -99,7 +104,7 @@ body
             display: flex
             justify-content: flex-start
             align-items: top
-            background: $light
+            
             height: auto
             overflow: auto
             -webkit-overflow-scrolling: touch
@@ -119,6 +124,7 @@ body
                     background: $light
                     li
                         a
+                            padding: 0px 15px
                             line-height: 74px
                             color: darken($light,30 )
                             font-weight: 600
@@ -146,8 +152,10 @@ body
                                 color: darken($light,50 )
                                 &::after
                                     margin: 0%
+                        &:first-child
+                            padding: 0px 20px
                 .container
-                    
+                    max-width: 100%
                     padding: 15px 30px                    
                     position: relative              
                                
@@ -166,9 +174,9 @@ body
                             
                             .card-header-title
                                 padding-bottom: 15px
-                                font-size: 16px
+                                font-size: 14px
                                 border-bottom: 1px solid darken($light, 10)
-                                
+                                color: $info
                         .card-content
                             padding: 0px
                             padding-top: 16px
@@ -185,12 +193,12 @@ body
                                     margin-bottom: 5px
                                 .content
                                     font-size: 15px
-                                    color: darken($light, 60)
+                                    color: darken($light, 40)
             .sidebar
                 flex-grow: 1
                 position: sticky
                 top: 0px
-                border-left: 1px solid darken($light,20 )
+                border-left: 1px solid darken($light,10 )
                 width: 100%
                 max-width: 300px
                 overflow: auto
@@ -200,7 +208,7 @@ body
                     display: none
                 .card
                     background: $light
-                    border-bottom: 1px solid  darken($light,20 )
+                    // border-bottom: 1px solid  darken($light,20 )
                     box-shadow: none
                     .card-header-title
                         padding: 0px
@@ -219,29 +227,38 @@ body
                             li
                                 display: flex
                                 justify-content: flex-start
-                                align-items: flex-start
+                                align-items: center
                                 margin-bottom: 1.5rem
                                 .image
                                     margin-right: 15px
+                                    &.small
+                                        width: 50px
                                 a
                                     color: #000
                                     font-weight: 600
                                 .info
                                     
                                     .uname
-                                        color: darken($light, 60)
-                                        font-size: .9rem
+                                        
+                                        font-size: 1rem
+                                        a
+                                            color: darken($light, 50)
                                     .details
                                         color: darken($light, 25)
                                         font-size: .75rem
                                         a
                                             color: $info
-                        .treng_list
-                            font-size: 1rem
-                            a
-                                color: darken($light,30 )
-                                display: block
-                                padding: 10px 0px
+                                    .ulink
+                                        font-size: .75rem
+                                        a
+                                            color: darken($light, 25)
+                                .more
+                                    border: 1px solid darken($light,20 )
+                                    border-radius: 50px
+                                    font-size: 0.8rem
+                                    a
+                                        color: darken($light,20 )
+                
                             
                     .card-footer
                         padding: 0px

@@ -1,4 +1,10 @@
 @charset "UTF-8";
+.gr-1 {
+  flex-grow: 1; }
+
+.d-flex {
+  display: flex; }
+
 /*! bulma.io v0.8.2 | MIT License | github.com/jgthms/bulma */
 @keyframes spinAround {
   from {
@@ -7036,6 +7042,9 @@ body {
       .wrapper .side-panel .s_menu li a:active {
         background: #c3e0f7;
         color: #213246; }
+    .wrapper .side-panel .s_menu li.is-active a {
+      background: #53a6e8;
+      color: #fff; }
   .wrapper .page-container {
     flex-grow: 1;
     display: flex;
@@ -7044,7 +7053,8 @@ body {
     overflow: hidden;
     position: relative;
     backface-visibility: hidden;
-    will-change: overflow; }
+    will-change: overflow;
+    background: #f5f6f8; }
     .wrapper .page-container .navbar {
       height: 80px;
       padding: 0px 32px; }
@@ -7055,7 +7065,6 @@ body {
       display: flex;
       justify-content: flex-start;
       align-items: top;
-      background: #f5f6f8;
       height: auto;
       overflow: auto;
       -webkit-overflow-scrolling: touch;
@@ -7073,6 +7082,7 @@ body {
           z-index: 2;
           background: #f5f6f8; }
           .wrapper .page-container .page-content .page .tabs li a {
+            padding: 0px 15px;
             line-height: 74px;
             color: #9ba5b9;
             font-weight: 600;
@@ -7099,7 +7109,10 @@ body {
             color: #62708c; }
             .wrapper .page-container .page-content .page .tabs li.is-active a::after {
               margin: 0%; }
+          .wrapper .page-container .page-content .page .tabs li:first-child {
+            padding: 0px 20px; }
         .wrapper .page-container .page-content .page .container {
+          max-width: 100%;
           padding: 15px 30px;
           position: relative; }
           .wrapper .page-container .page-content .page .container .new_post {
@@ -7115,8 +7128,9 @@ body {
               padding: 0px; }
               .wrapper .page-container .page-content .page .container .tweet_feed .card-header .card-header-title {
                 padding-bottom: 15px;
-                font-size: 16px;
-                border-bottom: 1px solid #d7dbe3; }
+                font-size: 14px;
+                border-bottom: 1px solid #d7dbe3;
+                color: #53a6e8; }
             .wrapper .page-container .page-content .page .container .tweet_feed .card-content {
               padding: 0px;
               padding-top: 16px; }
@@ -7132,12 +7146,12 @@ body {
                 margin-bottom: 5px; }
               .wrapper .page-container .page-content .page .container .tweet_feed .tweet_list .tweet .content {
                 font-size: 15px;
-                color: #4d586e; }
+                color: #7d8aa4; }
       .wrapper .page-container .page-content .sidebar {
         flex-grow: 1;
         position: sticky;
         top: 0px;
-        border-left: 1px solid #b9c0ce;
+        border-left: 1px solid #d7dbe3;
         width: 100%;
         max-width: 300px;
         overflow: auto;
@@ -7147,7 +7161,6 @@ body {
           display: none; }
         .wrapper .page-container .page-content .sidebar .card {
           background: #f5f6f8;
-          border-bottom: 1px solid #b9c0ce;
           box-shadow: none; }
           .wrapper .page-container .page-content .sidebar .card .card-header-title {
             padding: 0px;
@@ -7164,27 +7177,34 @@ body {
             .wrapper .page-container .page-content .sidebar .card .card-content .ulist li {
               display: flex;
               justify-content: flex-start;
-              align-items: flex-start;
+              align-items: center;
               margin-bottom: 1.5rem; }
               .wrapper .page-container .page-content .sidebar .card .card-content .ulist li .image {
                 margin-right: 15px; }
+                .wrapper .page-container .page-content .sidebar .card .card-content .ulist li .image.small {
+                  width: 50px; }
               .wrapper .page-container .page-content .sidebar .card .card-content .ulist li a {
                 color: #000;
                 font-weight: 600; }
               .wrapper .page-container .page-content .sidebar .card .card-content .ulist li .info .uname {
-                color: #4d586e;
-                font-size: 0.9rem; }
+                font-size: 1rem; }
+                .wrapper .page-container .page-content .sidebar .card .card-content .ulist li .info .uname a {
+                  color: #62708c; }
               .wrapper .page-container .page-content .sidebar .card .card-content .ulist li .info .details {
                 color: #aab3c4;
                 font-size: 0.75rem; }
                 .wrapper .page-container .page-content .sidebar .card .card-content .ulist li .info .details a {
                   color: #53a6e8; }
-            .wrapper .page-container .page-content .sidebar .card .card-content .treng_list {
-              font-size: 1rem; }
-              .wrapper .page-container .page-content .sidebar .card .card-content .treng_list a {
-                color: #9ba5b9;
-                display: block;
-                padding: 10px 0px; }
+              .wrapper .page-container .page-content .sidebar .card .card-content .ulist li .info .ulink {
+                font-size: 0.75rem; }
+                .wrapper .page-container .page-content .sidebar .card .card-content .ulist li .info .ulink a {
+                  color: #aab3c4; }
+              .wrapper .page-container .page-content .sidebar .card .card-content .ulist li .more {
+                border: 1px solid #b9c0ce;
+                border-radius: 50px;
+                font-size: 0.8rem; }
+                .wrapper .page-container .page-content .sidebar .card .card-content .ulist li .more a {
+                  color: #b9c0ce; }
           .wrapper .page-container .page-content .sidebar .card .card-footer {
             padding: 0px;
             display: block;

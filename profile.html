@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HRT HOME</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="./css/app.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
@@ -39,16 +39,16 @@
                 </div>
             </div>
             <ul class="s_menu">
-                <li class="is-active">
+                <li>
                     <a href="index.html">
                         <span class="icon">
                             <i class="fas fa-home"></i>
                         </span>
                         <span>HOME</span>
                     </a>
-                </li>               
-                
-                <li>
+                </li>
+
+                <li class="is-active">
                     <a href="profile.html">
                         <span class="icon">
                             <i class="fas fa-user"></i>
@@ -56,8 +56,8 @@
                         <span>Profile</span>
                     </a>
                 </li>
-              
-            
+
+
             </ul>
         </aside>
         <main class="page-container">
@@ -100,7 +100,12 @@
                     <div class="tabs is-medium">
                         <ul>
                             <li class="is-active"><a>TWEETS</a></li>
-                            
+                            <li><a>Photos</a></li>
+                            <li><a>Following</a></li>
+                            <li><a>Followers</a></li>
+                            <li><a>Favorites</a></li>
+                            <li><a>Lists</a></li>
+
                         </ul>
                     </div>
                     <div class="container">
@@ -112,9 +117,9 @@
                                 <div class="card-content">
                                     <form>
                                         <div class="field">
-                                            <label class="label">TWEET SOMETHING</label>
+                                            <label class="label">TWEET TO MYLEY CIRUS</label>
                                             <div class="control is-expended">
-                                                <input type="text" class="input is-expended">
+                                                <input type="text" class="input is-expended" placeholder="@MyleyCirus">
                                             </div>
                                         </div>
                                     </form>
@@ -125,7 +130,7 @@
                             <div class="card tweet_feed">
                                 <div class="card-header">
                                     <div class="card-header-title">
-                                        4 NEW TWEETS
+                                        ALL TWEETS
                                     </div>
                                 </div>
                                 <div class="card-content ">
@@ -253,66 +258,40 @@
                     <div class="card ">
                         <div class="card-title">
                             <div class="card-header-title">
-                                <span>Who to Follow</span>
-                                <span class="icon"><i class="fas fa-sync"></i></span>
+                                <span>Followed By</span>
                             </div>
                         </div>
                         <div class="card-content">
                             <ul class="ulist">
                                 <li>
+                                    <div class="gr-1 d-flex">
 
-                                    <figure class="image ">
-                                        <a href="#"></a>
-                                        <img src="https://placehold.it/50x50/000/fff" class="is-rounded" alt="">
-                                        </a>
-                                    </figure>
-                                    <div class="info">
-                                        <h4 class="uname">
-                                            <a href="#">Jonathan Moreira</a></h4>
-                                        <div class="details">Followed by<a href="#"> Kerem Suer</a></div>
-                                    </div>
-
-
-                                </li>
-                                <li>
-
-                                    <div class="image">
-                                        <a href="#"></a>
+                                        <figure class="image small">
+                                            <a href="#"></a>
                                             <img src="https://placehold.it/50x50/000/fff" class="is-rounded" alt="">
+                                            </a>
+                                        </figure>
+                                        <div class="info">
+                                            <h4 class="uname">
+                                                <a href="#">Jonathan Moreira</a>
+                                            </h4>
+                                            <div class="ulink"><a href="#">@JonathanMereira</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="more">
+                                        <a href="#">
+                                            <span class="icon is-rounded"><i class="fas fa-plus"></i></span>
                                         </a>
                                     </div>
-                                    <div class="info">
-                                        <h4 class="uname">
-                                            <a href="#">Jonathan Moreira</a></h4>
-                                        <div class="details">Followed by<a href="#"> Kerem Suer</a></div>
-                                    </div>
-
-
                                 </li>
-                                <li>
+                                
 
-                                    <div class="image">
-                                        <a href="#"></a>
-                                            <img src="https://placehold.it/50x50/000/fff" class="is-rounded" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <h4 class="uname">
-                                            <a href="#">Jonathan Moreira</a></h4>
-                                        <div class="details">Followed by<a href="#"> Kerem Suer</a></div>
-                                    </div>
-
-
-                                </li>
                             </ul>
                         </div>
-                        <div class="card-footer">
-                            <a class="card-footer-item">Popular Account</a>
-                            <a class="card-footer-item">Find Friends</a>
-                        </div>
+                       
                     </div>
-                   
-                    
+
+
                 </div>
             </div>
         </main>
