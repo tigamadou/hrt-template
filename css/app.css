@@ -6971,6 +6971,8 @@ html {
 
 body {
   height: 100vh; }
+  body * {
+    box-sizing: border-box; }
 
 .wrapper {
   height: 100vh;
@@ -7073,7 +7075,7 @@ body {
       .wrapper .page-container .page-content::-webkit-scrollbar {
         display: none; }
       .wrapper .page-container .page-content .page {
-        flex-grow: 3; }
+        flex-grow: 4; }
         .wrapper .page-container .page-content .page .tabs {
           border-bottom-color: #b9c0ce;
           height: 74px;
@@ -7153,7 +7155,7 @@ body {
         top: 0px;
         border-left: 1px solid #d7dbe3;
         width: 100%;
-        max-width: 300px;
+        max-width: 350px;
         overflow: auto;
         padding: 0rem 32px;
         scrollbar-width: none; }
@@ -7204,6 +7206,56 @@ body {
                 border-radius: 50px;
                 font-size: 0.8rem; }
                 .wrapper .page-container .page-content .sidebar .card .card-content .ulist li .more a {
+                  color: #b9c0ce; }
+            .wrapper .page-container .page-content .sidebar .card .card-content .profile .actions {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-bottom: 16px; }
+              .wrapper .page-container .page-content .sidebar .card .card-content .profile .actions .more {
+                border: 1px solid #b9c0ce;
+                border-radius: 50px;
+                font-size: 1.2rem;
+                height: 40px;
+                width: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center; }
+                .wrapper .page-container .page-content .sidebar .card .card-content .profile .actions .more a {
+                  color: #b9c0ce; }
+              .wrapper .page-container .page-content .sidebar .card .card-content .profile .actions .image {
+                width: 100px;
+                margin: 0px 0.5rem; }
+            .wrapper .page-container .page-content .sidebar .card .card-content .profile .info {
+              text-align: center;
+              margin-bottom: 16px; }
+              .wrapper .page-container .page-content .sidebar .card .card-content .profile .info .name {
+                font-size: 1.2rem;
+                font-weight: 900; }
+              .wrapper .page-container .page-content .sidebar .card .card-content .profile .info .link {
+                color: #b9c0ce;
+                font-weight: 600; }
+            .wrapper .page-container .page-content .sidebar .card .card-content .profile .stats {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              text-align: center;
+              margin: 0px -32px; }
+              .wrapper .page-container .page-content .sidebar .card .card-content .profile .stats > div {
+                flex-grow: 1;
+                padding: 32px 15px;
+                border: 1px solid #b9c0ce; }
+                .wrapper .page-container .page-content .sidebar .card .card-content .profile .stats > div:first-child {
+                  border-left: none;
+                  border-right: none; }
+                .wrapper .page-container .page-content .sidebar .card .card-content .profile .stats > div:last-child {
+                  border-left: none;
+                  border-right: none; }
+                .wrapper .page-container .page-content .sidebar .card .card-content .profile .stats > div .nbr {
+                  font-size: 1.2rem;
+                  font-weight: 900; }
+                .wrapper .page-container .page-content .sidebar .card .card-content .profile .stats > div .text {
+                  font-size: 1rem;
                   color: #b9c0ce; }
           .wrapper .page-container .page-content .sidebar .card .card-footer {
             padding: 0px;

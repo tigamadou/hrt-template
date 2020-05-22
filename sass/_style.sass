@@ -2,7 +2,8 @@ html
     height: 100vh
 body
     height: 100vh
-
+    *
+        box-sizing: border-box
 .wrapper
     height: 100vh
     
@@ -114,7 +115,7 @@ body
                 display: none
 
             .page
-                flex-grow: 3
+                flex-grow: 4
                 .tabs
                     border-bottom-color:  darken($light,20 )
                     height: 74px
@@ -200,7 +201,7 @@ body
                 top: 0px
                 border-left: 1px solid darken($light,10 )
                 width: 100%
-                max-width: 300px
+                max-width: 350px
                 overflow: auto
                 padding: 0rem 32px
                 scrollbar-width: none
@@ -258,7 +259,61 @@ body
                                     font-size: 0.8rem
                                     a
                                         color: darken($light,20 )
-                
+                        .profile
+                            .actions
+                                display: flex
+                                justify-content: center
+                                align-items: center
+                                margin-bottom: 16px
+
+                                .more
+                                    border: 1px solid darken($light,20 )
+                                    border-radius: 50px
+                                    font-size: 1.2rem
+                                    height: 40px
+                                    width: 40px
+                                    display: flex
+                                    justify-content: center
+                                    align-items: center
+                                    a
+                                        
+                                        color: darken($light,20 )
+                                .image
+                                    width: 100px
+                                    margin: 0px 0.5rem
+                            .info
+                                text-align: center
+                                
+                                .name
+                                    font-size: 1.2rem
+                                    font-weight: 900
+                                .link
+                                    color: darken($light,20 )
+                                    font-weight: 600
+                                margin-bottom: 16px
+                            .stats
+                                display: flex
+                                justify-content: space-between
+                                align-items: center
+                                text-align: center
+                                margin: 0px -32px
+                                &>div
+                                    flex-grow: 1
+                                    padding: 32px 15px
+                                    border: 1px solid darken($light,20 )
+                                    &:first-child
+                                        border-left: none
+                                        border-right: none
+                                    &:last-child
+                                        border-left: none
+                                        border-right: none
+                                    .nbr
+                                        font-size: 1.2rem
+                                        font-weight: 900
+                                    .text
+                                        font-size: 1rem
+                                        color: darken($light,20 )
+
                             
                     .card-footer
                         padding: 0px
